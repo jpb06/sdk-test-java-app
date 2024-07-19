@@ -8,7 +8,7 @@ public class JavascriptBridge {
         System.out.println("Javascript -> Java - Yolo() invoked");
     }
 
-    public void userAction(Object data) {
+    public void userActionsDoStuff(Object data) {
         System.out.println("Javascript -> Java - userAction(data) invoked");
         Gson gson = new GsonBuilder().serializeSpecialFloatingPointValues().serializeNulls().create();
         System.out.println("Java - userAction event payload: " + gson.toJson(data));

@@ -12,11 +12,11 @@
 
   window.sdk.init('widget-root');
 
-  window.sdk.on("user.action", (data) => {
-    console.info("Javascript - User.action listener");
+  window.sdk.on("user.actions.doStuff", (data) => {
+    console.info("Javascript - User.actions.doStuff listener");
     console.info(JSON.stringify(data));
     if(data.payload) {
-      window.javaApp.userAction(data.payload);
+      window.javaApp.userActionsDoStuff(data.payload);
     }
   })
 })();
