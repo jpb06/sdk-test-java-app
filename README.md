@@ -43,7 +43,10 @@ Typical usage looks like this:
 ### `emit`
 
 ```typescript
-WidgetSdk.emit<TEventName extends FramebusEventName>(eventName: TEventName, payload: FramebusEventPayload<TEventName>): void
+WidgetSdk.emit<TEventName extends FramebusEventName>(
+    eventName: TEventName, 
+    payload: FramebusEventPayload<TEventName>
+): void
 ```
 
 The `emit` function sends an event.
@@ -59,7 +62,10 @@ widget.emit('user.actions.doStuff', {
 ### `on`
 
 ```typescript
-WidgetSdk.on<TEventName extends FramebusEventName>(eventName: TEventName, listener: FramebusEventListener<TEventName>): void
+WidgetSdk.on<TEventName extends FramebusEventName>(
+    eventName: TEventName, 
+    listener: FramebusEventListener<TEventName>
+): void
 ```
 
 The `on` function creates a listener for an event type.
