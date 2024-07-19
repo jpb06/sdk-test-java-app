@@ -4,7 +4,7 @@
     baseUrl: 'https://sdk-test-git-main-jpb06s-projects.vercel.app',
     frameHeight: 500,
     frameWidth: 700,
-    theme: 'neutral',
+    theme: 'blue',
     token: 'jesuisuntoken',
     type: 'user'
   });
